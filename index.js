@@ -70,7 +70,6 @@ app.delete('/musicas/:id',
     (req, res) => {
         const id = req.params.id - 1;
         delete musicas[id];
-
         res.send("Música removida com sucesso");
     }
 );
